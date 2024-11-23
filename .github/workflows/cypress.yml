@@ -3,7 +3,7 @@ name: Run Cypress Tests
 on: 
     push:
         branches:
-            - main
+            - main #run the test on push to the main branch
     pull_request:
 
 jobs:
@@ -46,6 +46,3 @@ jobs:
                 key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
                 restore-keys: |
                  ${{ runner.os }}-node-
-              
-            
-
